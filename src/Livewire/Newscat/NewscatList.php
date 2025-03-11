@@ -41,6 +41,6 @@ class NewscatList extends Component
         $obj = $this->applySorting($obj);
         $obj = $this->applySearch($obj);
         $items = $obj->paginate(50);
-        return view('livewire.manta.newscat.newscat-list', ['items' => $items])->title($this->config['module_name']['multiple']);
+        return view('module-news::livewire.newscat.newscat-list', ['items' => $items])->title($this->config['module_name']['multiple']);
     }
 }

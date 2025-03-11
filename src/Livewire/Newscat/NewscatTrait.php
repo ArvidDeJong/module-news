@@ -15,7 +15,7 @@ trait NewscatTrait
     {
         $this->route_name = 'newscat';
         $this->route_list = route($this->route_name . '.list');
-        $this->config = module_config('Newscat');
+        $this->config = module_config('Newscat', 'News');
         $this->fields = $this->config['fields'];
         $this->moduleClass = 'Manta\Models\Newscat';
         $this->tab_title = isset($this->config['tab_title']) ? $this->config['tab_title'] : null;

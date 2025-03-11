@@ -13,6 +13,7 @@ use Darvis\ModuleNews\Livewire\News\NewsUpdate;
 use Darvis\ModuleNews\Livewire\News\NewsUpload;
 use Darvis\ModuleNews\Livewire\Newscat\NewscatCreate;
 use Darvis\ModuleNews\Livewire\Newscat\NewscatList;
+use Darvis\ModuleNews\Livewire\Newscat\NewscatListRow;
 use Darvis\ModuleNews\Livewire\Newscat\NewscatRead;
 use Darvis\ModuleNews\Livewire\Newscat\NewscatUpdate;
 use Darvis\ModuleNews\Livewire\Newscat\NewscatUpload;
@@ -49,6 +50,7 @@ class NewsServiceProvider extends ServiceProvider
 
         Livewire::component('module-news::newscat.newscat-create', NewscatCreate::class);
         Livewire::component('module-news::newscat.newscat-list', NewscatList::class);
+        Livewire::component('module-news::newscat.newscat-list-row', NewscatListRow::class);
         Livewire::component('module-news::newscat.newscat-read', NewscatRead::class);
         Livewire::component('module-news::newscat.newscat-update', NewscatUpdate::class);
         Livewire::component('module-news::newscat.newscat-upload', NewscatUpload::class);

@@ -1,16 +1,3 @@
-<?php
-
-namespace Darvis\ModuleNews\Livewire\Newscat;
-
-use Darvis\ModuleNews\Models\Newscat;
-use Darvis\Manta\Traits\MantaPagerowTrait;
-
-new class extends \Livewire\Volt\Component {
-    public Newscat $item;
-
-    use MantaPagerowTrait;
-};
-?>
 <flux:table.row data-id="{{ $item->id }}">
     <flux:table.cell class="handle"><i class="fa-solid fa-up-down"></i></flux:table.cell>
     <flux:table.cell> <x-manta.tables.image :item="$item->image" /></flux:table.cell>

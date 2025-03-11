@@ -14,7 +14,7 @@ return [
             "required" => false,
         ],
         "newscat" => [
-            "active" => false,
+            "active" => true,
             "type" => "checklist",
             "title" => "Categorieën",
             "options" => [],

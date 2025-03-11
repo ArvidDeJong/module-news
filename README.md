@@ -10,6 +10,12 @@ Je kunt dit package installeren via Composer:
 composer require darvis/module-news
 ```
 
+Voer na de installatie de database migraties uit:
+
+```bash
+php artisan migrate
+```
+
 ## Features
 
 - Nieuwsberichten beheren
@@ -45,6 +51,13 @@ php artisan vendor:publish --provider="Darvis\ModuleNews\NewsServiceProvider" --
 - Livewire 3.0 of hoger
 - Livewire Flux 2.0 of hoger
 - Darvis Manta CMS 1.0 of hoger
+
+## Gebruik
+
+Na installatie is de module beschikbaar in het Manta CMS menu. Hier kun je:
+- Nieuwsberichten toevoegen en beheren
+- Categorieën aanmaken en beheren
+- SEO instellingen configureren per nieuwsbericht
 
 ## Licentie
 
